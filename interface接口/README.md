@@ -2,7 +2,7 @@
 
 ##### 2、 `interface`定义
 
-```
+```typescript
 interface Person {
     // readonly name: string;   // 只读
     name: string;
@@ -14,7 +14,7 @@ interface Person {
 
 ##### 3、 `interface`可以继承别的`interface`，继承接口拥有被继承接口的全部属性
 
-```
+```typescript
 interface Teacher extends Person {
     teach(): string;
 }
@@ -22,7 +22,7 @@ interface Teacher extends Person {
 
 ##### 4、 `interface`可以直接定义方法
 
-```
+```typescript
 interface SayHi {
     (word: string): string;   // 接受word(string类型)参数，返回string
 }
@@ -35,7 +35,7 @@ const say: SayHi = (word: string) => {
 
 ##### 5、 类`class`可以直接应用接口
 
-```
+```typescript
 class User implements Person {
     name = 'dell';
     say() {
@@ -46,7 +46,7 @@ class User implements Person {
 
 ##### 6、传参
 
-```
+```typescript
 interface Person {
     name: string;
 }
